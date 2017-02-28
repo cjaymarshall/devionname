@@ -2,7 +2,7 @@ var PORT = process.env.PORT||3000;
 var express = require('express');
 var app = express();
 var http = require('http').Server(app);
-var testExp = "This is a test";
+
 
 //app.use(express.static(__dirname + '/public'));
 
@@ -11,7 +11,8 @@ app.get('/', function (req, res) {
 	});
 
 app.get('/test/', function (req, res) {
-  	res.json(testExp);
+	var testExp = "This is a test";
+  	res.send(testExp);
 }
 
 http.listen(PORT, function() {
