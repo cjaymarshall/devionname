@@ -10,10 +10,7 @@ app.get('/', function (req, res) {
 	res.send('App Root');
 	});
 
-app.get('/test/', function (req, res) {
-	var testExp = "This is a test";
-  	res.send(testExp);
-}
+
 
 http.listen(PORT, function() {
 	console.log("Server started!");
