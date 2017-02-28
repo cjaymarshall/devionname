@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 	});
 
 app.get('/test/', function (req, res) {
-  	res.send(testExp);
+  	res.json(testExp);
 }
 
 http.listen(PORT, function() {
